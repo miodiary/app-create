@@ -1,3 +1,7 @@
+.window{
+    display: none;
+}
+
 .day{
     display: inline-block;
 }

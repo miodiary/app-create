@@ -1,107 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>シフト希望画面</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./../css/kibou.css">
 </head>
 
 <body>
-    <header>
-        <h1>シフト希望提出画面</h1>
-    </header>
-    <h2>シフト希望を入力してください</h2>
-    <br>
-    <p></p>
-    <form method="post">
-        名前：<input type="text" name="name" />
-        <div class="week">
-            <label class="day" for="pop-up">月曜</div>
-            <input type="checkbox" id="pop-up" />
-            <div class="window">
-                <label for ="time">開始時刻：</label>
-                <input type="time" name="開始時刻" step="1800" /><br>
-                <label for ="time">終了時刻：</label>
-                <input type="time" name="終了時刻" step="1800" />
-                <input type="submit" name="submit" value="保存">
-            </div>
-        </div>
-        
-        <div class="week">
-            <label class="day" for="pop-up">火曜</div>
-            <input type="checkbox" id="pop-up" />
-            <div class="window">
-                <label for ="time">開始時刻：</label>
-                <input type="time" name="開始時刻" step="1800" /><br>
-                <label for ="time">終了時刻：</label>
-                <input type="time" name="終了時刻" step="1800" />
-                <input type="submit" name="submit" value="保存">
-            </div>
-        </div>
+<header>
+    <h1 class="wrapper_title">シフト希望入力</h1>
+</header>
+<div class="wrapper">
+  <div class="wrapper_normalIcon">
+    <details>
+      <summary>月曜日<span class="icon"></span></summary>
+      <div class="content">
+        <p>開始時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+        <p>終了時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+      </div>
+    </details>
 
-        <div class="week">
-            <label class="day" for="pop-up">水曜</div>
-            <input type="checkbox" id="pop-up" />
-            <div class="window">
-                <label for ="time">開始時刻：</label>
-                <input type="time" name="開始時刻" step="1800" /><br>
-                <label for ="time">終了時刻：</label>
-                <input type="time" name="終了時刻" step="1800" />
-                <input type="submit" name="submit" value="保存">
-            </div>
-        </div>
+    <details>
+      <summary>火曜日<span class="icon"></span></summary>
+      <div class="content">
+        <p>開始時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+        <p>終了時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+      </div>
+    </details>
 
-        <div class="week">
-            <label class="day" for="pop-up">木曜</div>
-            <input type="checkbox" id="pop-up" />
-            <div class="window">
-                <label for ="time">開始時刻：</label>
-                <input type="time" name="開始時刻" step="1800" /><br>
-                <label for ="time">終了時刻：</label>
-                <input type="time" name="終了時刻" step="1800" />
-                <input type="submit" name="submit" value="保存">
-            </div>
-        </div>
+    <details>
+      <summary>水曜日<span class="icon"></span></summary>
+      <div class="content">
+        <p>開始時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+        <p>終了時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+      </div>
+    </details>
 
-        <div class="week">
-            <label class="day" for="pop-up">金曜</div>
-            <input type="checkbox" id="pop-up" />
-            <div class="window">
-                <label for ="time">開始時刻：</label>
-                <input type="time" name="開始時刻" step="1800" /><br>
-                <label for ="time">終了時刻：</label>
-                <input type="time" name="終了時刻" step="1800" />
-                <input type="submit" name="submit" value="保存">
-            </div>
+    <details>
+      <summary>木曜日<span class="icon"></span></summary>
+      <div class="content">
+        <p>開始時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+        <p>終了時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+      </div>
+    </details>
+    <details>
+        <summary>木曜日<span class="icon"></span></summary>
+        <div class="content">
+            <p>開始時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+            <p>終了時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
         </div>
-
-        <div class="week">
-            <label class="day" for="pop-up">土曜</div>
-            <input type="checkbox" id="pop-up" />
-            <div class="window">
-                <label for ="time">開始時刻：</label>
-                <input type="time" name="開始時刻" step="1800" /><br>
-                <label for ="time">終了時刻：</label>
-                <input type="time" name="終了時刻" step="1800" />
-                <input type="submit" name="submit" value="保存">
-            </div>
+      </details>
+      <details>
+        <summary>金曜日<span class="icon"></span></summary>
+        <div class="content">
+            <p>開始時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+            <p>終了時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
         </div>
-
-        <div class="week">
-            <label class="day" for="pop-up">日曜</div>
-            <input type="checkbox" id="pop-up" />
-            <div class="window">
-                <label for ="time">開始時刻：</label>
-                <input type="time" name="開始時刻" step="1800" /><br>
-                <label for ="time">終了時刻：</label>
-                <input type="time" name="終了時刻" step="1800" />
-                <input type="submit" name="submit" value="保存">
-            </div>
+      </details>
+      <details>
+        <summary>土曜日<span class="icon"></span></summary>
+        <div class="content">
+            <p>開始時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+            <p>終了時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
         </div>
-        <input type="submit" name="submit" value="送信">
-    </form>
+      </details>
+      <details>
+        <summary>日曜日<span class="icon"></span></summary>
+        <div class="content">
+            <p>開始時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+            <p>終了時刻：<input type="time" step="900" min="18:00" max="26:00"></p>
+        </div>
+      </details>
+    </div>
+</div>
+<div class="no-label">
+    <input type="submit">
+</div>
 </body>
 
 </html>
